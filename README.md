@@ -89,50 +89,31 @@ This setup makes it easy to see the difference between the frontend, backend, an
 flashcard-app/
 │
 ├── backend/
-│   ├── server.js               # Express server, routes, Mongoose schema
+│   ├── server.js
 │   ├── package.json
 │   ├── package-lock.json
 │   └── node_modules/
 │
 ├── frontend/
-│   ├── public/                 # index.html, icons, manifest, static assets
+│   ├── public/
 │   │   ├── index.html
 │   │   ├── favicon.ico
-│   │   ├── favicon.png
-│   │   ├── logo192.png
-│   │   ├── logo512.png
 │   │   ├── manifest.json
-│   │   ├── robots.txt
 │   │   └── pen.png
 │   │
 │   ├── src/
-│   │   ├── assets/             # UI images (homescreen, dark mode, study mode)
-│   │   │   ├── homescreen.jpg
-│   │   │   ├── dark-mode.jpg
-│   │   │   ├── edit-mode.jpg
-│   │   │   ├── studymode.jpg
-│   │   │   └── pen.png
-│   │
-│   │   ├── components/         # React components
-│   │   │   ├── AddForm.js
-│   │   │   └── Flashcard.js
-│   │
-│   │   ├── services/           # Centralised API calls
-│   │   │   └── flashcardService.js
-│   │
-│   │   ├── App.js              # Main SPA interface
-│   │   ├── App.css             # Styling and animations
-│   │   ├── index.js            # React entry point
-│   │   ├── index.css
-│   │   ├── logo.svg
-│   │   ├── reportWebVitals.js
-│   │   └── setupTests.js
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── services/
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   └── index.js
 │   │
 │   ├── package.json
 │   └── package-lock.json
 │
 ├── database/
-│   └── flashcards_export.json  # MongoDB export for submission
+│   └── flashcards_export.json
 │
 └── README.md
 
