@@ -89,13 +89,13 @@ This setup makes it easy to see the difference between the frontend, backend, an
 flashcard-app/
 │
 ├── backend/
-│   ├── server.js
+│   ├── server.js               # Express server, routes, Mongoose schema
 │   ├── package.json
 │   ├── package-lock.json
 │   └── node_modules/
 │
 ├── frontend/
-│   ├── public/
+│   ├── public/                 # index.html, icons, manifest, static assets
 │   │   ├── index.html
 │   │   ├── favicon.ico
 │   │   ├── favicon.png
@@ -106,23 +106,23 @@ flashcard-app/
 │   │   └── pen.png
 │   │
 │   ├── src/
-│   │   ├── assets/
+│   │   ├── assets/             # UI images (homescreen, dark mode, study mode)
 │   │   │   ├── homescreen.jpg
 │   │   │   ├── dark-mode.jpg
 │   │   │   ├── edit-mode.jpg
 │   │   │   ├── studymode.jpg
 │   │   │   └── pen.png
-│   │   │
-│   │   ├── components/
+│   │
+│   │   ├── components/         # React components
 │   │   │   ├── AddForm.js
 │   │   │   └── Flashcard.js
-│   │   │
-│   │   ├── services/
+│   │
+│   │   ├── services/           # Centralised API calls
 │   │   │   └── flashcardService.js
-│   │   │
-│   │   ├── App.js
-│   │   ├── App.css
-│   │   ├── index.js
+│   │
+│   │   ├── App.js              # Main SPA interface
+│   │   ├── App.css             # Styling and animations
+│   │   ├── index.js            # React entry point
 │   │   ├── index.css
 │   │   ├── logo.svg
 │   │   ├── reportWebVitals.js
@@ -132,9 +132,10 @@ flashcard-app/
 │   └── package-lock.json
 │
 ├── database/
-│   └── flashcards_export.json
+│   └── flashcards_export.json  # MongoDB export for submission
 │
 └── README.md
+
 
 This framework neatly separates the backend server, React frontend, and database export, making for a modular, easy-to-maintain and scalable full-stack app.
 
