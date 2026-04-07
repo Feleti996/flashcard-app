@@ -80,44 +80,13 @@ Features:
 
 📁 5. Folder Layout
 
-The project is split into three main directories, 
+The project is split into three main directories, keeping the backend logic, frontend UI, and database export separate. 
 
-Keeping the backend logic, frontend UI, and database export separate. 
+The backend directory contains the Express server (server.js), which manages all API routes, request processing, and communication with the MongoDB database. It also includes the Mongoose schema that defines the structure of each flashcard, along with the backend package.json file and dependencies required to run the server.
 
-This setup makes it easy to see the difference between the frontend, backend, and data layers, and keeps things simple to maintain and expand.
+The front directory holds the full version of React. It has the public folder for static stuff like index.html and icons, and the src folder, which has all the React components, styling files like App.css, the main interface in App.js, and the services/flashcardService.js file that handles all the API calls to the backend. This setup keeps the user interface tidy, modular, and easy to look after.
 
-flashcard-app/
-│
-├── backend/
-│   ├── server.js
-│   ├── package.json
-│   ├── package-lock.json
-│   └── node_modules/
-│
-├── frontend/
-│   ├── public/
-│   │   ├── index.html
-│   │   ├── favicon.ico
-│   │   ├── manifest.json
-│   │   └── pen.png
-│   │
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── services/
-│   │   ├── App.js
-│   │   ├── App.css
-│   │   └── index.js
-│   │
-│   ├── package.json
-│   └── package-lock.json
-│
-├── database/
-│   └── flashcards_export.json
-│
-└── README.md
-
-
+The database folder holds the MongoDB collection (flashcards_export.json) used for annotation and checking. These three folders clearly split the frontend, backend, and data centre, keeping things organised, easy to maintain, and simple to expand.
 
 This framework neatly separates the backend server, React frontend, and database export, making for a modular, easy-to-maintain and scalable full-stack app.
 
