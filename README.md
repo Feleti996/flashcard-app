@@ -137,6 +137,7 @@ flashcard-app/
 └── README.md
 
 
+
 This framework neatly separates the backend server, React frontend, and database export, making for a modular, easy-to-maintain and scalable full-stack app.
 
 
