@@ -66,17 +66,78 @@ The app distinguishes flashcards that have already been viewed in Study Mode. Wh
 
 The feature comes with a Light/Dark theme switch, smooth animations, and a fully mobile-responsive layout. Improvements for accessibility like keyboard focus and navigation make sure the user experience is great. Everything happens without page reloads, keeping the quality that an SPA needs.
 
+Features: 
+
+- Create, edit and delete flashcards 
+- 3D flip animation 
+- Study mode with randomised cards 
+- Card icon shown after study mode (greyed out once viewed) 
+- Light/dark theme toggle 
+- Full response layout 
+- Single page app (no reloads)
+
 
 
 📁 5. Folder Layout
 
-The project is set up into two main folders
+The project is split into three main directories, 
 
-project/
-backend/ contains server.js, which has the Express server, routes, and Mongoose schema.
-frontend/ contains React software, including App.js for the main interface, styling App.css, and services/flashcardService.js for centralised API calls.
+Keeping the backend logic, frontend UI, and database export separate. 
 
-This setup keeps the frontend, backend, and workload separate, making it easy to maintain and scale things.
+This setup makes it easy to see the difference between the frontend, backend, and data layers, and keeps things simple to maintain and expand.
+
+flashcard-app/
+│
+├── backend/
+│   ├── server.js
+│   ├── package.json
+│   ├── package-lock.json
+│   └── node_modules/
+│
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   ├── favicon.ico
+│   │   ├── favicon.png
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   ├── robots.txt
+│   │   └── pen.png
+│   │
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── homescreen.jpg
+│   │   │   ├── dark-mode.jpg
+│   │   │   ├── edit-mode.jpg
+│   │   │   ├── studymode.jpg
+│   │   │   └── pen.png
+│   │   │
+│   │   ├── components/
+│   │   │   ├── AddForm.js
+│   │   │   └── Flashcard.js
+│   │   │
+│   │   ├── services/
+│   │   │   └── flashcardService.js
+│   │   │
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   ├── index.js
+│   │   ├── index.css
+│   │   ├── logo.svg
+│   │   ├── reportWebVitals.js
+│   │   └── setupTests.js
+│   │
+│   ├── package.json
+│   └── package-lock.json
+│
+├── database/
+│   └── flashcards_export.json
+│
+└── README.md
+
+This framework neatly separates the backend server, React frontend, and database export, making for a modular, easy-to-maintain and scalable full-stack app.
+
 
 🏃‍♂️ 6. How to go about processing the application
 
